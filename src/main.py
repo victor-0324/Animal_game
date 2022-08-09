@@ -21,4 +21,9 @@ def init_app():
 
         app.register_blueprint(initial_app)
 
+         # Aplicativo apostar
+        from .blueprints import apostar_app
+
+        app.register_blueprint(apostar_app)
+
         return app
