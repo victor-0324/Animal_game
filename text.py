@@ -25,7 +25,7 @@ else:
 # data = soup.find_all('h3', class_='g')
 
     tabela = soup.find_all('div', {"class":"col-sm-12 col-md-6 col-lg-4"})  
-    novo = soup.find_all('h3')
+    novo = soup.find_all( 'p')
     h3 = list(novo)
     
     print(h3[0])

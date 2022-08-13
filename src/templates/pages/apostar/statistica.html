@@ -316,170 +316,53 @@
                 <div class="content-wrapper">
                     <div class="row">
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/1.png')}}" width="210" heigt="250" alt="img">
-                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    {% for i in texto %} {{i|safe }} {% endfor %}
 
-                        <div class="col-sm-4 grid-margin">
-
-                            <img src="{{ url_for('static', filename='imagens/2.png')}}" width="210" heigt="250" alt="img">
-                        </div>
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/3.png')}}" width="210" heigt="250" alt="img">
+                                </div>
+                            </div>
 
                         </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/4.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/5.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/6.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/7.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/8.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/9.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/10.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/11.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/12.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/13.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/14.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/15.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/16.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/17.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/18.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/19.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/20.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/21.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/22.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/23.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/24.png')}}" width="210" heigt="250" alt="img">
-
-                        </div>
-
-                        <div class="col-sm-4 grid-margin">
-                            <button type="submit"><img src="{{ url_for('static', filename='imagens/25.png')}}" width="210" heigt="250" alt="img"> </button>
-
-                        </div>
-
                     </div>
-
-
+                    <!-- content-wrapper ends -->
+                    <!-- partial:../../partials/_footer.html -->
+                    <footer class="footer">
+                        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+                            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+                        </div>
+                    </footer>
+                    <!-- partial -->
                 </div>
-                <!-- content-wrapper ends -->
-                <!-- partial:../../partials/_footer.html -->
-                <footer class="footer">
-                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
-                    </div>
-                </footer>
-                <!-- partial -->
+                <!-- main-panel ends -->
             </div>
-            <!-- main-panel ends -->
+            <!-- page-body-wrapper ends -->
         </div>
-        <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="{{ url_for('static', filename='assets/vendors/js/vendor.bundle.base.js')}}"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="{{ url_for('static', filename='assets/vendors/chart.js/Chart.min.js')}}"></script>
+        <!-- container-scroller -->
+        <!-- plugins:js -->
+        <script src="{{ url_for('static', filename='assets/vendors/js/vendor.bundle.base.js')}}"></script>
+        <!-- endinject -->
+        <!-- Plugin js for this page -->
+        <script src="{{ url_for('static', filename='assets/vendors/chart.js/Chart.min.js')}}"></script>
 
-    <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
-    <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
-    <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="{{ url_for('static', filename='assets/js/off-canvas.js')}}"></script>
-    <script src="{{ url_for('static', filename='assets/js/hoverable-collapse.js')}}"></script>
-    <script src="{{ url_for('static', filename='assets/js/misc.js')}}"></script>
-    <script src="{{ url_for('static', filename='assets/js/settings.js')}}"></script>
-    <script src="{{ url_for('static', filename='assets/js/todolist.js')}}"></script>
+        <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+        <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+        <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+        <!-- End plugin js for this page -->
+        <!-- inject:js -->
+        <script src="{{ url_for('static', filename='assets/js/off-canvas.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/js/hoverable-collapse.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/js/misc.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/js/settings.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/js/todolist.js')}}"></script>
 
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="{{ url_for('static', filename='assets/js/dashboard.js')}}"></script>
-    <!-- End custom js for this page -->
+        <!-- endinject -->
+        <!-- Custom js for this page -->
+        <script src="{{ url_for('static', filename='assets/js/dashboard.js')}}"></script>
+        <!-- End custom js for this page -->
 </body>
 
 </html>
