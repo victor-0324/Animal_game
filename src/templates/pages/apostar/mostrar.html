@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{url_for('static', filename='assets/vendors/mdi/css/materialdesignicons.min.css')}}">
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="{{url_for('static', filename='')}}">
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='')}}"> -->
     <link rel="stylesheet" href="{{url_for('static', filename='assets/vendors/flag-icon-css/css/flag-icon.min.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='assets/vendors/jvectormap/jquery-jvectormap.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='assets/vendors/owl-carousel-2/owl.carousel.min.css')}}">
@@ -33,20 +33,21 @@
         <!-- partial:../../partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-                <a class="sidebar-brand brand-logo" href="../../index.html"><img src="../../assets/images/logo.svg" alt="logo" /></a>
-                <a class="sidebar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+                <!-- <a class="sidebar-brand brand-logo" href="../../index.html"><img src="../../assets/images/logo.svg" alt="logo" /></a> -->
+                <!-- <a class="sidebar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a> -->
             </div>
             <ul class="nav">
                 <li class="nav-item profile">
                     <div class="profile-desc">
                         <div class="profile-pic">
                             <div class="count-indicator">
-                                <img class="img-xs rounded-circle " src="../../assets/images/faces/face15.jpg" alt="">
-                                <span class="count bg-success"></span>
+                              
+                                <!-- <img class="img-xs rounded-circle " src="../../assets/images/faces/face15.jpg" alt=""> -->
+                                <!-- <span class="count bg-success"></span> -->
                             </div>
                             <div class="profile-name">
                                 <h5 class="mb-0 font-weight-normal">Uzl Jogo do bicho</h5>
-                                <span>Gold Member</span>
+                                <span>Umarizal Apostas</span>
                             </div>
                         </div>
                         <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
@@ -128,15 +129,15 @@
               <span class="mdi mdi-menu"></span>
             </button>
                     <ul class="navbar-nav w-100">
-                        <li class="nav-item w-100">
+                        <!-- <li class="nav-item w-100">
                             <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
                                 <input type="text" class="form-control" placeholder="Search products">
                             </form>
-                        </li>
+                        </li> -->
                     </ul>
                     <ul class="navbar-nav navbar-nav-right">
                         <li class="nav-item dropdown d-none d-lg-block">
-                            <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+                            <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">Fazer aposta</a>
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
                                 <h6 class="p-3 mb-0">Projects</h6>
                                 <div class="dropdown-divider"></div>
@@ -314,128 +315,129 @@
             <!-- partial -->
             <div class="main-panel">
                 <div class="content-wrapper">
-                    <div class="row">
+                    <div class="movie--list">
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/1.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/1.png')}}" width="210" heigt="250" alt="img">
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
+                        <div class="movierow--item">
 
-                            <img src="{{ url_for('static', filename='imagens/2.png')}}" width="210" heigt="250" alt="img">
-                        </div>
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/3.png')}}" width="210" heigt="250" alt="img">
-
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/2.png')}}" width="210" heigt="250" alt="img">
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/4.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/3.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/5.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/4.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/6.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/5.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/7.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" class="imagem" src="{{ url_for('static', filename='imagens/6.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/8.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/7.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/9.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/8.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/10.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/9.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/11.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/10.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/12.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/11.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/13.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/12.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/14.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/13.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/15.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/14.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/16.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/15.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/17.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/16.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/18.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/17.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/19.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/18.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/20.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem"  src="{{ url_for('static', filename='imagens/19.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/21.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/20.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/22.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/21.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/23.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/22.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <img src="{{ url_for('static', filename='imagens/24.png')}}" width="210" heigt="250" alt="img">
+                        <div class="movierow--item">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/23.png')}}" width="210" heigt="250" alt="img">
 
                         </div>
 
-                        <div class="col-sm-4 grid-margin">
-                            <button type="submit"><img src="{{ url_for('static', filename='imagens/25.png')}}" width="210" heigt="250" alt="img"> </button>
+                        <div class="movierow--item ">
+                            <img class="imagem" src="{{ url_for('static', filename='imagens/24.png')}}" width="210" heigt="250" alt="img">
+
+                        </div>
+
+                        <div class="movierow--item ">
+                           <img class="imagem" src="{{ url_for('static', filename='imagens/25.png')}}" width="210" heigt="250" alt="img"> 
 
                         </div>
 

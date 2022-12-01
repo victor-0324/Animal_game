@@ -46,7 +46,7 @@
                             </div>
                             <div class="profile-name">
                                 <h5 class="mb-0 font-weight-normal">Uzl Jogo do bicho</h5>
-                                <span>Gold Member</span>
+                                <span>Umarizal Apostas</span>
                             </div>
                         </div>
                         <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
@@ -319,8 +319,24 @@
                         <div class="col-md-6 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body">
-                                    {% for i in texto %} {{i|safe }} {% endfor %}
+                                    <!-- {% for i in texto %} 
+                                    {{i |safe }} {% endfor %} -->
+                                    {{texto[1] | safe}}
+                                    {{texto[5] | safe}}
+                                    {{texto[9] | safe}}
+                                    {{texto[13] | safe}}
+                                    {{texto[17] | safe}}
+                                </div>
+                            </div>
 
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1>Todas as milhares do dia </h1>
+                                    {% for i in texto %} 
+                                    {{i |safe }} {% endfor %}
+                           <!-- {{texto | safe}} -->
                                 </div>
                             </div>
 

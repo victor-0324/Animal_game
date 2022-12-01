@@ -8132,7 +8132,27 @@ pre {
   .col-sm-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
-  .col-sm-5 {
+
+    /* Lista de imagens */
+  .movie--list{
+    overflow-x: hidden;
+
+  }
+  .movierow--item{
+    display: inline-flex;
+    width: 200px;
+  }
+  .imagem:hover{
+    transform: scale(1);
+    transition:  0.5;
+  }
+  .imagem {
+    
+    transform: scale(0.9);
+    width: 100%;
+   
+  }
+  .col-sm-5{
     flex: 0 0 41.66667%;
     max-width: 41.66667%; }
   .col-sm-6 {

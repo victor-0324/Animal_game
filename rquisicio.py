@@ -1,9 +1,7 @@
-from flask import Blueprint, request, render_template, url_for, redirect
-import requests  
-from bs4 import BeautifulSoup  
-from datetime import datetime
+import requests
+from bs4 import BeautifulSoup   
 
-def Texto():
+def Texto(novo) -> list:
 # 1. Pegar conteudo HTML a partir da URL
     url = "https://www.resultadofacil.com.br/resultado-do-jogo-do-bicho/PB" 
     html = requests.get(url)  
@@ -23,18 +21,27 @@ def Texto():
         tabela = soup.find_all('div', class_="col-sm-12 col-md-6 col-lg-4")  
         novo = soup.find_all('td')
        
-        return novo
+        return novo 
 
-apostar_app = Blueprint("apostar_app", __name__, url_prefix="/apostar", template_folder='templates',static_folder='static')
+j = []
+resu = Texto(j)
+
+# vetor = input("Digite sua milhar: ")
+
+for v in resu:
+    # if v == vetor:
+    #     print(f'Essa milhar saio: {vetor}')
+        
+    # else:
+    #     print(f'\nEssa milhar nao saio: {vetor} ')
+    #     print(v[1::10])
+    #     break
+    
+    print(type(v))
+        
+            
+
+    
 
 
-# Tela de apostar
-@apostar_app.route("/", methods=["GET", "POST"])
-def mostrar():   
-    return render_template("pages/apostar/mostrar.html")
 
-
-@apostar_app.route("/statistica", methods=["GET", "POST"])
-def statistica(): 
-    texto = Texto()  
-    return render_template("pages/apostar/statistica.html",texto=texto)
